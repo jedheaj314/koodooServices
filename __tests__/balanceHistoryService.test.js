@@ -1,4 +1,4 @@
-import { accountTypeChecker } from '../balanceHistoryService'
+const { accountTypeChecker } = require('../balanceHistoryService')
 
 // SETUP
 // Type 🅰️
@@ -107,17 +107,17 @@ describe('Balance hostory tests', () => {
     expect(result).toEqual('A')
   })
 
-  test('scenario 1: Given same changed balance each month accoutTypeChecker returns B.', () => {
+  test('scenario 2: Given same changed balance each month accoutTypeChecker returns B.', () => {
     const result = accountTypeChecker(typeBBalancehistory)
     expect(result).toEqual('B')
   })
 
-  test('scenario 1: Given balance increased and  different change each month accoutTypeChecker returns C.', () => {
+  test('scenario 3: Given balance increased and  different change each month accoutTypeChecker returns C.', () => {
     const result = accountTypeChecker(noneOfTheTypes)
     expect(result).toEqual('C')
   })
 
-  test('scenario 1: Given unsorted  balance history accoutTypeChecker returns expected result.', () => {
+  test('Given unsorted  balance history accoutTypeChecker returns expected result.', () => {
     const result = accountTypeChecker(unsorted)
     expect(result).toEqual('A')
   })

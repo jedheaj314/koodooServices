@@ -67,7 +67,7 @@ const getType = (accountBalanceHistory) => {
   return mapResult(decreasedByVaryingAmounts, changedBySameAmount)
 }
 
-export const accountTypeChecker = (accountBalanceHistory) => {
+const accountTypeChecker = (accountBalanceHistory) => {
   if (!accountBalanceHistory
     || !Array.isArray(accountBalanceHistory)
     || accountBalanceHistory.length < 3) return null
@@ -77,3 +77,6 @@ export const accountTypeChecker = (accountBalanceHistory) => {
 
   return getType(accountBalanceHistory)
 }
+
+exports.accountTypeChecker = accountTypeChecker
+

@@ -1,14 +1,24 @@
 {
-  "name": "balancehistory",
+  "name": "balanceHistory",
   "version": "1.0.0",
-  "description": "check type of balance history",
-  "main": "index.js",
-  "scripts": {
-    "test": "env cmd test jest"
+  "description": "Service to get type of the balance history.",
+  "main": "balanceHistoryService.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^26.6.3"
   },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jedheaj314/koodooServices.git"
+  },
+  "keywords": [],
   "author": "AJ JEDHE",
   "license": "ISC",
-  "dependencies": {
-    "jest": "^26.6.3"
-  }
+  "bugs": {
+    "url": "https://github.com/jedheaj314/koodooServices/issues"
+  },
+  "homepage": "https://github.com/jedheaj314/koodooServices#readme"
 }
